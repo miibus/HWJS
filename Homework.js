@@ -26,7 +26,9 @@ item_5=item_3;
 let item_6;
 let item_6_type;
 
-item_6_type=item_6;
+item_6_type=typeof(item_6);
+
+item_6=15;
 
 console.log("item_6 == " + typeof(item_6), "item_6_type == " + typeof(item_6_type));
 
@@ -66,7 +68,7 @@ if (age_1<age_2){
 // 4***:
 // Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 
-let age=prompt('How old are you?')
+// let age=prompt('How old are you?')
 
 const checkAge = function(age) 
 { if (typeof(age) == "string")
@@ -74,7 +76,7 @@ const checkAge = function(age)
     }
  {if (typeof(age) == "number") {
     if (age<age_2){
-    console.log("You don’t have access cause your age is"+ age + "It’s less then ")
+    console.log("You don’t have access cause your age is "+ age + " It’s less then ")
 }
        else if (age >=  age_2 && age <  age_3) {
 
